@@ -1,0 +1,78 @@
+<!-- http://codepen.io/anon/pen/aOKQMq -->
+<style type="text/css">
+.number, .operation {
+  display: inline-block; 
+}
+
+.number div, .operation div {
+  margin-top: 5px;
+}
+
+
+.calulator {
+  width: 300px;
+}
+.number button, .operation button {
+  width: 100px;
+  height: 30px;
+}
+
+.display {
+  width: 410px;
+}
+
+textarea {
+     resize: none;
+     width: 100%;
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+</style>
+
+
+<div>
+  <div class="display">
+    <textarea></textarea>
+  </div>
+  <div class="enter" ng-click="clickButton($event)">
+    <div class="number">
+      <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+      <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+      <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+      </div>
+      <div>
+        <button>0</button>
+        <button>,</button>
+        <button>=</button>
+      </div>
+    </div>
+    <div class="operation">
+      <div>
+        <button>+</button>
+      </div>
+      <div>
+        <button>-</button>
+      </div>
+      <div>
+        <button>/</button>
+      </div>
+      <div>
+        <button>x</button>
+      </div>
+
+    </div>
+  </div>
+</div>
